@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StatsXplorer - Calculadoras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <h1>StatsXplorer</h1>
+  <nav>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="explicacoes.html">Explicações</a></li>
+      <li><a href="calculadoras.html">Calculadoras</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="box">
+    <h2>Probabilidade - Distribuição Uniforme</h2>
+    
+    <label for="a">Valor de a:</label>
+    <input type="number" id="a" step="any" />
+
+    <label for="b">Valor de b:</label>
+    <input type="number" id="b" step="any" />
+
+    <label for="x1">Valor de x1:</label>
+    <input type="number" id="x1" step="any" />
+
+    <label for="x2">Valor de x2:</label>
+    <input type="number" id="x2" step="any" />
+
+    <button onclick="calcularUniforme()">Calcular Uniforme</button>
+    <div id="resultadoUniforme" class="resultado"></div>
+    <div id="graficoUniforme" style="width: 100%; height: 400px;"></div>
+
+    <h2>Distribuição Exponencial</h2>
+
+    <label for="xifi">Valor de ΣXiFi (soma dos produtos):</label>
+    <input type="number" id="xifi" step="any" />
+
+    <label for="n">Valor de N (total de ocorrências):</label>
+    <input type="number" id="n" step="any" />
+
+    <label for="tipoProbabilidade">Escolha o tipo de probabilidade:</label>
+    <select id="tipoProbabilidade" onchange="mostrarCamposExp()">
+      <option value="">-- Selecione --</option>
+      <option value="maior">P(X ≥ A)</option>
+      <option value="menor">P(X ≤ B)</option>
+      <option value="entre">P(A ≤ X ≤ B)</option>
+    </select>
+
+    <div id="campoA" style="display:none;">
+      <label for="a_exp">Valor de A:</label>
+      <input type="number" id="a_exp" step="any" />
+    </div>
+
+    <div id="campoB" style="display:none;">
+      <label for="b_exp">Valor de B:</label>
+      <input type="number" id="b_exp" step="any" />
+    </div>
+
+    <button onclick="calcularExponencial()">Calcular Exponencial</button>
+    <div id="resultadoExponencial" class="resultado"></div>
+    <div id="graficoExponencial" style="width: 100%; height: 400px;"></div>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 StatsXplorer — Desenvolvido por Jonas Santos e Pedro Adorno</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
