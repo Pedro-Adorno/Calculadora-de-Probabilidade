@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="StatsXplorer: Calculadoras e explicações sobre Distribuições Uniforme e Exponencial." />
+  <title>StatsXplorer - Explorador de Estatísticas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>StatsXplorer</h1>
+
+    <!-- Navegação responsiva com menu hambúrguer -->
+    <nav aria-label="Menu principal">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="explicacoes.html">Explicações</a></li>
+        <li><a href="calculadoras.html">Calculadoras</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="box">
+      <h2>Bem-vindo ao StatsXplorer</h2>
+      <p>Seja muito bem-vindo ao <strong>StatsXplorer</strong>, uma plataforma criada com o intuito de realizar cálculos estatísticos de VAC - Distribuição Uniforme e Exponencial.</p>
+      <p>Este projeto foi desenvolvido por <strong>Jonas Santos</strong> e <strong>Pedro Adorno</strong>.</p>
+      <p>A proposta do StatsXplorer é oferecer uma calculadora para o estudo de <strong>distribuições de probabilidade</strong>, começando com a <strong>Distribuição Uniforme</strong> e a <strong>Distribuição Exponencial</strong>. Aqui, você pode explorar conceitos teóricos, realizar cálculos interativos e visualizar gráficos gerados automaticamente com base nos seus dados.</p>
+      <p>O site foi construído com linguagens de programação web, como <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StatsXplorer — Desenvolvido por Jonas Santos e Pedro Adorno</p>
+  </footer>
+
+  <!-- Script para fechar o menu ao clicar em algum item -->
+  <script>
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('menu-toggle').checked = false;
+      });
+    });
+  </script>
+</body>
+</html>

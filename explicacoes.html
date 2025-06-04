@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StatsXplorer - Explicações</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <h1>StatsXplorer</h1>
+  <nav>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="explicacoes.html">Explicações</a></li>
+      <li><a href="calculadoras.html">Calculadoras</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section class="box">
+      <h2>Explicações</h2>
+      <p><strong>Média (Distribuição Uniforme):</strong> A média representa o valor esperado de uma variável aleatória contínua com distribuição uniforme. A fórmula é (a + b) / 2, onde <em>a</em> é o limite inferior e <em>b</em> o limite superior do intervalo. Ela indica o ponto central do intervalo considerado.</p>
+
+      <p><strong>Variância (Distribuição Uniforme):</strong> A variância mede a dispersão dos valores em relação à média. Para a distribuição uniforme, a fórmula é (b - a)² / 12. Um valor maior de variância indica maior espalhamento dos dados dentro do intervalo.</p>
+
+      <p><strong>Desvio Padrão:</strong> O desvio padrão é a raiz quadrada da variância e representa o quanto, em média, os valores se afastam da média. Ele é utilizado para interpretar a variabilidade dos dados de forma mais intuitiva.</p>
+
+      <p><strong>Coeficiente de Variação:</strong> O coeficiente de variação (CV) é uma medida relativa da dispersão, calculada como (Desvio Padrão / Média) × 100%. Ele permite comparar a variabilidade entre diferentes conjuntos de dados, mesmo com médias distintas.</p>
+
+      <p><strong>Probabilidade (Distribuição Uniforme):</strong> A probabilidade de uma variável aleatória contínua assumir valores entre <em>x1</em> e <em>x2</em> é dada por (x2 - x1) / (b - a), desde que x1 e x2 estejam dentro do intervalo [a, b]. Essa fórmula reflete o fato de que todos os valores dentro do intervalo têm a mesma chance de ocorrer.</p>
+
+      <p><strong>Probabilidade (Distribuição Exponencial):</strong> Na distribuição exponencial, usamos as fórmulas P(X ≤ x) = 1 - e^(−λx) para a probabilidade acumulada e P(X > x) = e^(−λx) para a probabilidade de sobrevivência. Essa distribuição é comumente usada para modelar o tempo entre eventos em um processo de Poisson, como o tempo até a falha de um equipamento.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StatsXplorer — Desenvolvido por Jonas Santos e Pedro Adorno</p>
+  </footer>
+</body>
+</html>
